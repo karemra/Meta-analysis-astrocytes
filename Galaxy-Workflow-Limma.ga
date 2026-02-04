@@ -1,0 +1,51 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "comments": [],
+    "format-version": "0.1",
+    "name": "Limma",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/limma_voom/limma_voom/3.50.1+galaxy0",
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [],
+            "label": null,
+            "name": "limma",
+            "outputs": [
+                {
+                    "name": "outTables",
+                    "type": "input"
+                },
+                {
+                    "name": "outReport",
+                    "type": "html"
+                }
+            ],
+            "position": {
+                "left": 10,
+                "top": 10
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/limma_voom/limma_voom/3.50.1+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "d6f5fa4ee473",
+                "name": "limma_voom",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__input_ext\": \"tabular\", \"adv\": {\"lfc\": \"0.0\", \"pVal\": \"0.05\", \"pAdjust\": \"BH\", \"treat\": false, \"topgenes\": \"10\", \"normalisationOption\": \"TMM\", \"robOption\": true}, \"anno\": {\"annoOpt\": \"no\", \"__current_case__\": 1}, \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\", \"cont\": {\"cfile\": \"no\", \"__current_case__\": 1, \"rep_contrast\": [{\"__index__\": 0, \"contrast\": \"Moi-Mock\"}]}, \"deMethod\": {\"de_select\": \"voom\", \"__current_case__\": 0, \"weightOption\": false}, \"f\": {\"filt\": {\"filt_select\": \"no\", \"__current_case__\": 1}}, \"input\": {\"format\": \"files\", \"__current_case__\": 0, \"rep_factor\": [{\"__index__\": 0, \"factorName\": \"Covid\", \"rep_group\": [{\"__index__\": 0, \"groupName\": \"Moi\", \"countsFile\": null}, {\"__index__\": 1, \"groupName\": \"Mock\", \"countsFile\": null}]}]}, \"out\": {\"plots\": [\"i\", \"d\", \"c\", \"b\", \"x\", \"m\", \"h\", \"s\"], \"filtCounts\": false, \"normCounts\": false, \"libinfo\": false, \"rscript\": false, \"rdaOption\": false}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "3.50.1+galaxy0",
+            "type": "tool",
+            "uuid": "f9ac45b0-511c-4ca8-b395-bb188056d365",
+            "when": null,
+            "workflow_outputs": []
+        }
+    },
+    "tags": [],
+    "uuid": "8322a2c7-ca7b-4a87-8fe3-b749b106b3df",
+    "version": 0
+}
