@@ -1,0 +1,83 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "comments": [],
+    "format-version": "0.1",
+    "name": "Download and Extract Reads in FASTQ",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "SRA"
+                }
+            ],
+            "label": "SRA",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 10,
+                "top": 10
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "98bf403e-a2b8-41b9-a988-39a0c465639e",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/3.0.8+galaxy0",
+            "errors": null,
+            "id": 1,
+            "input_connections": {
+                "input|file_list": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Download and Extract Reads in FASTQ",
+            "outputs": [
+                {
+                    "name": "list_paired",
+                    "type": "input"
+                },
+                {
+                    "name": "list_single",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 230,
+                "top": 10
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/3.0.8+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "6591f049cf7e",
+                "name": "sra_tools",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__input_ext\": \"input\", \"adv\": {\"defline_seq\": \"@$sn[_$rn]/$ri\", \"minID\": null, \"maxID\": null, \"minlen\": null, \"split\": true, \"alignments\": \"both\", \"region\": null, \"matepairDist\": null, \"readfilter\": \"\", \"spotgroups\": null, \"clip\": false, \"skip_technical\": false, \"table\": \"\"}, \"chromInfo\": \"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\", \"input\": {\"input_select\": \"file_list\", \"__current_case__\": 2, \"file_list\": null}, \"outputformat\": \"fastqsanger.gz\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "3.0.8+galaxy0",
+            "type": "tool",
+            "uuid": "4d068f95-0abe-47bd-a8e9-b0ff68f75083",
+            "when": null,
+            "workflow_outputs": []
+        }
+    },
+    "tags": [],
+    "uuid": "6d4228be-f637-4a98-b120-a37d8700f8fd",
+    "version": 0
+}
