@@ -1,6 +1,5 @@
 install.packages("RobustRankAggreg")
 library(RobustRankAggreg)
-?RobustRankAggreg
 
 meta1<- read.delim("MatrizDOWN.txt",na="")
 
@@ -46,3 +45,4 @@ results <- ranks[ranks$adjustedPval < 0.05,]
 
 ##Export the results table out of R with the following command
 write.table(results, "results_down.txt", sep = "\t") 
+
