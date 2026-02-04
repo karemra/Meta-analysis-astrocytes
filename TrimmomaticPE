@@ -1,4 +1,0 @@
-#TrimmomaticPE: Started with arguments:
-
--threads 3 fastq_r1.fastqsanger.gz fastq_r2.fastqsanger.gz fastq_out_r1_paired.fastqsanger.gz fastq_out_r1_unpaired.fastqsanger.gz fastq_out_r2_paired.fastqsanger.gz fastq_out_r2_unpaired.fastqsanger.gz ILLUMINACLIP:/usr/local/share/trimmomatic-0.38-1/adapters/TruSeq3-PE.fa:2:30:10:8:true SLIDINGWINDOW:4:30 -trimlog trimlog
-Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
