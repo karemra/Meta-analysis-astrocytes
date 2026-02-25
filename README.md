@@ -4,8 +4,7 @@ The goal of this project is to synthesize data from multiple studies to identify
 
 # RNA-seq: a step-by-step analysis pipeline.
 
-- [Pre-alignment quality control (QC)](#pre-alignment-qc)
-- 
-- [Align to the reference human genome](#align-to-the-reference-genome)
-- [Quantify transcripts](#quantification)
+- Pre-alignment quality control (QC)
+- Align to the reference human genome
+- Quantify transcripts
  
